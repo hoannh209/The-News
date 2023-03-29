@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .container {
+      background-color: rgb(235, 200, 135);
+      border-radius: 10px;
+      font-family: 'Roboto Slab', serif;
+    }
+    .container .header {
+      background-color: orange;
+      color: white; 
+      border-radius: 10px; 
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .header input{
+      background-color: rgb(250, 195, 94);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      margin-left: 100px;
+      margin-right: 100px;
+      width: 30%;
+    }
+    ::placeholder {
+      color: white;
+      font-style: italic;
+      opacity: 0.6;
+    }
+    .content .list > div {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      gap: 20px;
+      padding: 10px 20px;
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+    a {
+      font-size: 20px;
+    }  
+    button{
+      background-color: rgb(250, 195, 94);
+      border: none;
+      
+      border-radius: 10px;
+    }
+  </style>  
+</head>
+<body>
+  <section class="container">
+    <div class="content">
+      <div class="header"> 
+        <h1>The News</h1>
+        <p>Most Popular News Websites In The World</p>
+        <input id="search" type="search" placeholder="Search...">
+        <button  id="btn">
+          <i onclick="filterItems()" class="fa fa-search"></i>
+        </button>
+      </div>
+      <div id="list" class="list"></div>
+    </div>  
+   
+  </section>
+<script src="script.js"></script>
+<script  src="jquery.js"></script>
+</body>
+</html>
